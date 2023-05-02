@@ -106,8 +106,6 @@ async function chatReplyProcess(options: RequestOptions) {
         process?.(partialResponse)
       },
     })
-    global.console.log('=====')
-    global.console.log(response)
     return sendResponse({ type: 'Success', data: response })
   }
   catch (error: any) {
