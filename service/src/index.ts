@@ -36,6 +36,7 @@ router.post('/chat-process', [auth, limiter], async (req, res) => {
       temperature,
       top_p,
     })
+    res.end()
   }
   catch (error) {
     res.write(JSON.stringify(error))
